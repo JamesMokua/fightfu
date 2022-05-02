@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+.outerDiv {
+  position: relative;
+  display: inline-block;
+}
+.innerDiv {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+.playerLife{
+    background-color: yellow;
+    height: 30px; 
+}
+.timer {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+.health{
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+.health2{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    display:flex ;
+    justify-content: flex-end;
+}
+.enemyHealth {
+  background-color: yellow;
+  height: 30px;
+}
+.enemyHealth2 {
+    background-color: yellow;
+    height: 30px;
+    width: 100%;
+  }
+.decreaseHealth {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.decreaseHealth2 {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+

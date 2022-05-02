@@ -26,6 +26,7 @@ class Sprite {
     };
     this.color = color;
     this.isAttacking;
+    this.health = 100;
   }
   draw() {
     //draw sprite relative to its position in canvas
@@ -145,14 +146,16 @@ function animate(e) {
     player.isAttacking
   ) {
     player.isAttacking = false;
-    console.log("player");
+    enemy.health -= 10;
+    document.querySelector('#enemyLife').style.width = enemy.health+'%';
   };
   if (
     rectangularCollision({rectangle1:enemy, rectangle2:player})&&
      enemy.isAttacking
    ) {
      enemy.isAttacking = false;
-     console.log("enemy");
+     player.health -= 10;
+     document.querySelector('#playerLife').style.width = player.health+'%'
    }
 }
 
