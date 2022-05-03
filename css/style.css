@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 .outerDiv {
   position: relative;
@@ -21,6 +22,9 @@
   width: 100px;
   height: 100px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .health{
     position: relative;
@@ -35,11 +39,11 @@
     justify-content: flex-end;
 }
 .enemyHealth {
-  background-color: yellow;
+  background-color: red;
   height: 30px;
 }
 .enemyHealth2 {
-    background-color: yellow;
+    background-color: red;
     height: 30px;
     width: 100%;
   }
@@ -59,4 +63,26 @@
     right: 0;
     width: 100%;
 }
+.message{
+    position: absolute;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
 
+.message2{
+    position: absolute;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
